@@ -16,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// Chỗ này để là /home nó không nhận, chắc trong laravel nó cái sẵn cái Auth rồi.
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index');
+
+//Route::get('/test', 'HomeController@test')->name('test');
+
