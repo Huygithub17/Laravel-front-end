@@ -14,7 +14,13 @@
                         <div class="overlay-content">
                             <h2>{{number_format($product->price)}} VNĐ</h2>
                             <p>{{$product->name}}</p>
-                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                            <a
+                                class="btn btn-default add-to-cart add_to_cart_action"
+                                data-url ="{{route('cart.add', ['id'=> $product->id])}}"
+                            >
+                                <i class="fa fa-shopping-cart">
+                                </i>Add to cart
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -25,6 +31,7 @@
                     </ul>
                 </div>
             </div>
+
         </div>
     @endforeach
 

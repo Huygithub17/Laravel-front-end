@@ -9,7 +9,7 @@
 @endsection
 
 @section('js')
-    <link rel="stylesheet" href="{{ asset('home/home.js') }}">
+    <script src="{{asset('home/home.js') }}" type="text/javascript"> </script>
 @endsection
 
 @section('content')
@@ -21,7 +21,6 @@
     <section>
         <div class="container">
             <div class="row">
-
                 @include('components.sidebar')
 
                 <div class="col-sm-9 padding-right">
